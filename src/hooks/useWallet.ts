@@ -1,5 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
-import { isAddress } from 'ethers';
+import { useState, useCallback } from 'react';
 
 declare global {
   interface Window {

@@ -1,10 +1,9 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { ethers, Contract, formatEther, isAddress } from 'ethers';
-import { KingdomData, BuildingType } from '../types';
+import { KingdomData } from '../types';
 import { CONTRACT_ADDRESS, CONTRACT_ABI, BSC_RPC_URL, GEM_RATE, BLOCKS_PER_DAY, BATTLE_COOLDOWN, SAFETY_BUFFER, BUILDING_TYPES, EXIT_HORIZON_HOURS } from '../config/constants';
-import { LogEntry } from '../types';
 
-export const useGameData = (viewAddress: string, account: string | null, addLog: (msg: string, type?: 'info' | 'success' | 'error') => void) => {
+export const useGameData = (viewAddress: string, account: string | null, _addLog: (msg: string, type?: 'info' | 'success' | 'error') => void) => {
   const [balance, setBalance] = useState<string>('0');
   const [contractBalance, setContractBalance] = useState<{bnb: string, usd: string, raw: number}>({bnb: '0', usd: '0', raw: 0});
   const [dailyWithdrawals, setDailyWithdrawals] = useState<number>(0);

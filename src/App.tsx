@@ -1,10 +1,10 @@
-import { useState, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { useWallet } from './hooks/useWallet';
 import { useLogs } from './hooks/useLogs';
 import { useGameData } from './hooks/useGameData';
 import { useGameActions } from './hooks/useGameActions';
 import { BUILDING_TYPES } from './config/constants';
-import { LogEntry, BuildingType, ActiveBuilding, StrategicAction } from './types';
+import { LogEntry, BuildingType } from './types';
 
 // ============================================================================
 // COMPLETELY REDESIGNED UI - Modern Card-Based Dashboard Layout
