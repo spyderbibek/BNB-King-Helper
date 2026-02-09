@@ -20,11 +20,13 @@ An advanced tactical interface for the BNB Kingdom ecosystem. This tool provides
 ## Setup
 
 1. Install dependencies:
+
    ```bash
    npm install
    ```
 
 2. Run development server:
+
    ```bash
    npm run dev
    ```
